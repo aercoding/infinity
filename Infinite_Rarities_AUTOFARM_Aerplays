@@ -1,0 +1,222 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Infinite Rarities By:AerPlays", "DarkTheme")
+
+local startergui = game:GetService("StarterGui")
+local player = game.Players.LocalPlayer.Character
+local partR = game.Workspace["RarityGet"] 
+local partS = game.Workspace["Sacrifice"]
+local partP = game.Workspace["Prestige"]
+local partA = game.Workspace["Ascend"]
+    -- Main
+    
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("TELEPORT")
+ 
+    
+    MainSection:NewButton("Prestige TP", "Makes you tp to prestige", function()
+        local player = game.Players.LocalPlayer.Character
+local part = game.Workspace["Prestige"] 
+player.HumanoidRootPart.CFrame = part.CFrame
+    end)
+ 
+    MainSection:NewButton("Rarity Roll TP", "Makes you tp to RarityGet", function()
+        local player = game.Players.LocalPlayer.Character
+local part = game.Workspace["RarityGet"] 
+player.HumanoidRootPart.CFrame = part.CFrame
+    end)
+    
+    MainSection:NewButton("Sacrifice TP", "Makes you tp to Sacrifice", function()
+        local player = game.Players.LocalPlayer.Character
+local part = game.Workspace["Sacrifice"] 
+player.HumanoidRootPart.CFrame = part.CFrame
+    end)
+    
+    MainSection:NewButton("Ascend TP", "Makes you tp to the Ascend button", function()
+        local player = game.Players.LocalPlayer.Character
+local part = game.Workspace["Ascend"] 
+player.HumanoidRootPart.CFrame = part.CFrame
+    end)
+ 
+MainSection:NewButton("SP Luck Upgrade TP", "Makes you tp to the luck upgrade button", function()
+        local player = game.Players.LocalPlayer.Character
+local part = game.Workspace["UpgradeLuck"] 
+player.HumanoidRootPart.CFrame = part.CFrame
+    end)
+ 
+MainSection:NewButton("Bulk Roll TP", "Makes you tp to the Bulk Roll button", function()
+        local player = game.Players.LocalPlayer.Character
+local part = game.Workspace["UpgradeBr"] 
+player.HumanoidRootPart.CFrame = part.CFrame
+    end)
+ 
+MainSection:NewButton("SP Multiplier TP", "Makes you tp to the SP Multiplier button", function()
+        local player = game.Players.LocalPlayer.Character
+local part = game.Workspace["UpgradeSPM"] 
+player.HumanoidRootPart.CFrame = part.CFrame
+    end)
+ 
+MainSection:NewButton("Roll Cooldown TP", "Makes you tp to the Roll Cooldown button", function()
+        local player = game.Players.LocalPlayer.Character
+local part = game.Workspace["UpgradeRcd"] 
+player.HumanoidRootPart.CFrame = part.CFrame
+    end)
+ 
+local Farm = Window:NewTab("Farm")
+    local MainSection = Farm:NewSection("AUTO FARM")
+
+    MainSection:NewToggle("Auto Sacrice", "Autofarm Sacrifice and Rarity TP", function(state)  
+        if state then    
+        _G.loop = true
+        while _G.loop == true do wait()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/sacrifice"))()
+wait(0.2)
+       end
+        else
+        _G.loop = false
+        while _G.loop == true do wait()
+        break
+            end
+        end
+    end) 
+
+ 
+MainSection:NewToggle("Auto Prestige", "Autofarm Prestige and Rarity TP", function(state)  
+    if state then    
+    _G.loop = true
+    while _G.loop == true do wait()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/prestige"))()
+   end
+    else
+    _G.loop = false
+    while _G.loop == true do wait()
+    break
+        end
+    end
+end)
+
+MainSection:NewToggle("Auto Ascend Fast", "Autofarm Ascend and Rarity TP", function(state)  
+    if state then    
+    _G.loop = true
+    while _G.loop == true do wait()
+    local player = game.Players.LocalPlayer.Character
+    local part = game.Workspace["RarityGet"] 
+    player.HumanoidRootPart.CFrame = part.CFrame
+    wait (1)
+    local player = game.Players.LocalPlayer.Character
+    local part = game.Workspace["Sacrifice"] 
+    player.HumanoidRootPart.CFrame = part.CFrame
+    wait (0.2)
+    local player = game.Players.LocalPlayer.Character
+    local part = game.Workspace["UpgradeLuck"] 
+    player.HumanoidRootPart.CFrame = part.CFrame
+    wait (0.3)
+     local player = game.Players.LocalPlayer.Character
+    local part = game.Workspace["RarityGet"] 
+    player.HumanoidRootPart.CFrame = part.CFrame
+    wait (1)
+
+    local part = game.Workspace["Ascend"] 
+    player.HumanoidRootPart.CFrame = part.CFrame
+    wait (0.2)
+   end
+    else
+    _G.loop = false
+    while _G.loop == true do wait()
+    break
+        end
+    end
+end)
+MainSection:NewToggle("Auto Ascend FULL", "Autofarm Ascend and Rarity TP", function(state)  
+    if state then    
+    _G.loop = true
+    while _G.loop == true do wait()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/ascend"))()
+    end
+    else
+    _G.loop = false
+    while _G.loop == true do wait()
+    break
+        end
+    end
+end)
+MainSection:NewToggle("Auto Trascend", "Autofarm Trascend and Rarity TP", function(state)  
+    if state then    
+    _G.loop = true
+    while _G.loop == true do wait()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/ascend"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/ascend"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/ascend"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/ascend"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/ascend"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/ascend"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/ascend"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/ascend"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/ascend"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/prestige"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/prestige"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/prestige"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/prestige"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/prestige"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/prestige"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/Sac%20and%20tran"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/Sac%20and%20tran"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/Sac%20and%20tran"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/Sac%20and%20tran"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/Sac%20and%20tran"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/Sac%20and%20tran"))()
+    wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aercoding/infinity/main/Sac%20and%20tran"))()
+    wait(0.2)
+        local player = game.Players.LocalPlayer.Character
+        local part = game.Workspace["RarityGet"] 
+        player.HumanoidRootPart.CFrame = part.CFrame
+        wait (2)
+        local player = game.Players.LocalPlayer.Character
+        local part = game.Workspace.APMapExpansion2["Transcend"] 
+        player.HumanoidRootPart.CFrame = part.CFrame
+        wait (0.2)
+        local player = game.Players.LocalPlayer.Character
+        local part = game.Workspace.APMapExpansion2["UpgradeAPMTP"] 
+        player.HumanoidRootPart.CFrame = part.CFrame
+        wait (0.2)
+          local player = game.Players.LocalPlayer.Character
+        local part = game.Workspace.APMapExpansion2["UpgradePPMTP"] 
+        player.HumanoidRootPart.CFrame = part.CFrame
+        wait (0.2)
+        local player = game.Players.LocalPlayer.Character
+        local part = game.Workspace.APMapExpansion2["UpgradeLuckTP"] 
+        player.HumanoidRootPart.CFrame = part.CFrame
+        wait (0.2)
+        local player = game.Players.LocalPlayer.Character
+        local part = game.Workspace.APMapExpansion2["UpgradeSPMTP"] 
+        player.HumanoidRootPart.CFrame = part.CFrame
+        wait (0.2)
+   end
+    else
+    _G.loop = false
+    while _G.loop == true do wait()
+    break
+        end
+    end
+end)
+    
