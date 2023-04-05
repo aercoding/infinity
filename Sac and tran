@@ -9,7 +9,7 @@
         local player = game.Players.LocalPlayer.Character
         local part = game.Workspace["UpgradeSPM"] 
         player.HumanoidRootPart.CFrame = part.CFrame
-        wait(0.2)
+        wait(2)
         local player = game.Players.LocalPlayer.Character
         local part = game.Workspace["UpgradeLuck"] 
         player.HumanoidRootPart.CFrame = part.CFrame
