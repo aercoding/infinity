@@ -2,20 +2,23 @@
     local part = game.Workspace["RarityGet"] 
     player.HumanoidRootPart.CFrame = part.CFrame
     wait (1)
-    local player = game.Players.LocalPlayer.Character
-    local part = game.Workspace["Sacrifice"] 
-    player.HumanoidRootPart.CFrame = part.CFrame
-    wait (0.2)
-    local player = game.Players.LocalPlayer.Character
-    local part = game.Workspace["UpgradeLuck"] 
-    player.HumanoidRootPart.CFrame = part.CFrame
-    wait (0.3)
-     local player = game.Players.LocalPlayer.Character
-    local part = game.Workspace["RarityGet"] 
-    player.HumanoidRootPart.CFrame = part.CFrame
-    wait (1)
-
     local part = game.Workspace["Ascend"] 
     player.HumanoidRootPart.CFrame = part.CFrame
     wait (0.2)
-   end
+    local player = game.Players.LocalPlayer.Character
+    local part = game.Workspace.APMapExpansion["UpgradeAPMAP"] 
+    player.HumanoidRootPart.CFrame = part.CFrame
+    wait (0.2)
+    local player = game.Players.LocalPlayer.Character
+    local part = game.Workspace.APMapExpansion["UpgradePPMAP"] 
+    player.HumanoidRootPart.CFrame = part.CFrame
+    wait (0.2)
+    local player = game.Players.LocalPlayer.Character
+    local part = game.Workspace.APMapExpansion["UpgradeLuckAP"] 
+    player.HumanoidRootPart.CFrame = part.CFrame
+    wait (0.2)
+    local player = game.Players.LocalPlayer.Character
+    local part = game.Workspace.APMapExpansion["UpgradeSPMAP"] 
+    player.HumanoidRootPart.CFrame = part.CFrame
+    wait (0.2)
+
